@@ -25,11 +25,11 @@ p {
     background-color: lightskyblue;
     min-width: 200px;
     display: grid;
-    grid-template-rows: 70px .4fr 1fr;
+    grid-template-rows: 6.2rem .4fr 1fr;
 }
 
 .menu-obi {
-    background-color: lightblue;
+    background-color: lightskyblue;
 }
 
 .logo {
@@ -89,7 +89,7 @@ ul {
     background-color: lightcoral;
     min-width: 400px;
     display: grid;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 12.2rem 1fr;
 }
 
 .top-row {
@@ -99,11 +99,11 @@ ul {
 }
 
 .search {
+    height: 6.2rem;
     display: grid;
     grid-template-columns: 1fr .4fr;
     justify-content: space-around;
     align-items: center;
-    padding-top: 10px;
     padding-left: 10px;
 }
 
