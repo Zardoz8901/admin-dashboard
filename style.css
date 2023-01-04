@@ -25,7 +25,7 @@ p {
     background-color: lightskyblue;
     min-width: 200px;
     display: grid;
-    grid-template-rows: 100px .4fr 1fr;
+    grid-template-rows: 70px .4fr 1fr;
 }
 
 .menu-obi {
@@ -34,9 +34,9 @@ p {
 
 .logo {
     display: grid;
-    grid-template-columns: .5fr 1fr;
+    grid-template-columns: 4.2rem 1fr;
     justify-self: start;
-    align-self: center;
+    align-items: center;
 }
 
 .logo > span {
@@ -46,6 +46,16 @@ p {
 
 .menu1 {
     display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: 10px;
+    align-content: center;
+}
+
+.icons {
+    display: grid;
+    grid-template-rows: repeat(6, 3rem);
+    align-items: center;
+    padding-left: 5px;
 }
 
 .menu1 ul {
@@ -53,6 +63,7 @@ p {
     grid-template-rows: repeat(6, 3rem);
     justify-items: start;
     align-items: center;
+    
 }
 
 ul {
@@ -63,6 +74,8 @@ ul {
 
 .menu2 {
     display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: 10px;
 }
 
 .menu2 ul {
@@ -76,31 +89,49 @@ ul {
     background-color: lightcoral;
     min-width: 400px;
     display: grid;
-    grid-template-rows: 130px 1fr;
+    grid-template-rows: 150px 1fr;
 }
 
 .top-row {
     background-color: lightcyan;
     display: grid;
+    padding-left: 1rem;
 }
 
 .search {
     display: grid;
     grid-template-columns: 1fr .4fr;
     justify-content: space-around;
-    align-items: end;
+    align-items: center;
     padding-top: 10px;
     padding-left: 10px;
 }
 
 .search-left {
     display: grid;
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 2rem 1fr;
+    align-items: center;
+    gap: 10px;
 }
 
 .search-right {
     display: grid;
-    grid-template-columns: 40px 40px 1fr;
+    align-items: center;
+    grid-template-columns: 1.5rem 50px 1fr;
+    gap: 20px;
+}
+
+.search-right > img {
+    justify-self: space-between;
+}
+
+.search-right > img:nth-child(2) {
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.search-right > span {
+    padding-right: 10px;
 }
 
 .search > span {
@@ -111,6 +142,7 @@ ul {
     background-color: palegreen;
     height: 2rem;
     width: 32ch;
+    border-radius: 10px;
 }
 
 .profile {
@@ -120,9 +152,17 @@ ul {
     padding: 10px;
 }
 
+
 .screenname {
     display: grid;
-    grid-template-columns: repeat(2, 1fr 100px);
+    grid-template-columns: 4.2rem 100px;
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.screenname > img {
+    opacity: 1;
 }
 
 .handle {
@@ -143,9 +183,11 @@ ul {
 }
 
 .buttons > div {
-    width: 80px;
+    width: 6rem;
+    padding: .3rem;
     background-color: palegoldenrod;
     text-align: center;
+    border-radius: 15px;
 }
 
 .content-row {
