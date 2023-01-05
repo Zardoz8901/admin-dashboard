@@ -8,6 +8,14 @@
     src: url("Typefaces/AmericaBold.otf");
 }
 
+:root {
+    --menu-color: #fcd34d;
+    --card-color: #fafaf9;
+    --background-color: #fef3c7;
+    --shadow-color: #a8a29e;
+    --obi-color: #fca5a5;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -34,17 +42,17 @@ p {
 
 .menu.container {
     font-family: 'america bold';
+    background-color: var(--menu-color);
 }
 
 .menu {
-    background-color: lightskyblue;
     min-width: 200px;
     display: grid;
     grid-template-rows: 6.2rem .4fr 1fr;
 }
 
 .menu-obi {
-    background-color: lightskyblue;
+    background-color: var(--menu-color);
 }
 
 .logo {
@@ -102,14 +110,14 @@ ul {
 }
 
 .content {
-    background-color: lightcoral;
+    background-color: var(--background-color);
     min-width: 400px;
     display: grid;
     grid-template-rows: 12.2rem 1fr;
 }
 
 .top-row {
-    background-color: lightcyan;
+    background-color: var(--card-color);
     display: grid;
     padding-left: 20px;
     font-family: 'america bold';
@@ -129,6 +137,7 @@ ul {
     grid-template-columns: 2rem 1fr;
     align-items: center;
     gap: 10px;
+    padding-right: 3.6rem;
 }
 
 .search-right {
@@ -153,9 +162,8 @@ ul {
 }
 
 .searchbar {
-    background-color: palegreen;
+    background-color: var(--menu-color);
     height: 2rem;
-    width: 32ch;
     border-radius: 10px;
 }
 
@@ -199,7 +207,7 @@ ul {
 .buttons > div {
     width: 6rem;
     padding: .3rem;
-    background-color: palegoldenrod;
+    background-color: var(--obi-color);
     text-align: center;
     border-radius: 15px;
 }
@@ -227,14 +235,14 @@ ul {
 
 .card.container {
     display: grid;
-    background-color: aliceblue;
+    background-color: var(--card-color);
     grid-template-columns: 10px 1fr;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .obi {
-    background-color: lightgray;
+    background-color: var(--obi-color);
 }
 
 .canvas {
@@ -280,7 +288,7 @@ ul {
 }
 
 .social {
-    background-color: lightpink;
+    background-color: var(--background-color);
     display: grid;
     grid-template-rows: .6fr 1fr;
 }
@@ -302,7 +310,7 @@ ul {
 }
 
 .announcement.card {
-    background-color: aliceblue;
+    background-color: var(--card-color);
     height: 118px;
     display: grid;
     align-items: start;
@@ -311,8 +319,8 @@ ul {
 }
 
 .announcement.card:nth-child(2) {
-    border-top: 2px solid lightskyblue;
-    border-bottom: 2px solid lightskyblue;
+    border-top: 2px solid var(--obi-color);
+    border-bottom: 2px solid var(--obi-color);
 }
 
 .announcement.card > p:nth-child(1) {
@@ -341,7 +349,7 @@ ul {
 }
 
 .trending.card {
-    background-color: aliceblue;
+    background-color: var(--card-color);
     height: 90px;
     display: grid;
     grid-template-columns: 3.6rem 1fr;
